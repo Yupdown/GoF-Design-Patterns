@@ -43,8 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adapter.cs" />
+    <None Include="Adapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
