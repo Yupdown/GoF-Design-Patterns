@@ -2,7 +2,12 @@
 
 public class Proxy
 {
-    public class Subject
+    public interface ISubject
+    {
+        void Operate();
+    }
+
+    public class Subject : ISubject
     {
         public void Operate()
         {
@@ -10,7 +15,7 @@ public class Proxy
         }
     }
 
-    public class ProxySubject
+    public class ProxySubject : ISubject
     {
         private Subject _subject;
 
@@ -27,7 +32,7 @@ public class Proxy
 
     public static void Main(string[] args)
     {
-        ProxySubject proxy = new ProxySubject(new Subject());
+        ISubject proxy = new ProxySubject(new Subject());
 
         proxy.Operate();
     }
