@@ -44,7 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Adapter.cs" />
-    <Compile Include="Bridge.cs" />
+    <None Include="Bridge.cs" />
+    <Compile Include="Composite.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Proxy.cs" />
   </ItemGroup>

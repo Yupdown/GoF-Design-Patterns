@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Adapter
+public class PatternAdapter
 {
     public interface IAdapter
     {

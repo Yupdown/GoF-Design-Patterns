@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Bridge
+public class PatternBridge
 {
     public interface IAbstraction
     {

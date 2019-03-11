@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Proxy
+public class PatternProxy
 {
     public interface ISubject
     {
