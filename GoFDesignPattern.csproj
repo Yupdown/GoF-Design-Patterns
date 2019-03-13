@@ -43,11 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Adapter.cs" />
-    <None Include="Bridge.cs" />
-    <Compile Include="Composite.cs" />
+    <None Include="PatternAdapter.cs" />
+    <None Include="PatternBridge.cs" />
+    <None Include="PatternComposite.cs" />
+    <None Include="PatternDecorator.cs" />
+    <Compile Include="PatternFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="Proxy.cs" />
+    <None Include="PatternProxy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
