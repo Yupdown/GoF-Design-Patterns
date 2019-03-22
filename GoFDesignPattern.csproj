@@ -48,8 +48,9 @@
     <None Include="Patterns\PatternComposite.cs" />
     <None Include="Patterns\PatternDecorator.cs" />
     <None Include="Patterns\PatternFacade.cs" />
-    <Compile Include="Patterns\PatternAbstractFactory.cs" />
+    <None Include="Patterns\PatternAbstractFactory.cs" />
     <None Include="Patterns\PatternFlyweight.cs" />
+    <Compile Include="Patterns\PatternBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Patterns\PatternProxy.cs" />
   </ItemGroup>
