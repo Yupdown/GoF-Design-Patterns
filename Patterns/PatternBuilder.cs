@@ -63,7 +63,7 @@ public class PatternBuilder
         IBuilder builder = new Builder();
 
         builder.BuildSubject()
-            .SetName("Hello");
+            .SetName("SubjectA");
 
         ISubject subject = builder.subject;
 
