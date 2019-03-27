@@ -2,6 +2,21 @@
 
 public class PatternBuilder
 {
+    public class Director
+    {
+        private IBuilder _builder;
+
+        public Director()
+        {
+
+        }
+
+        public void Build()
+        {
+            _builder.BuildSubject();
+        }
+    }
+
     public interface IBuilder
     {
         ISubject subject { get; }

@@ -52,8 +52,8 @@
     <None Include="Patterns\PatternFlyweight.cs" />
     <None Include="Patterns\PatternBuilder.cs" />
     <None Include="Patterns\PatternFactoryMethod.cs" />
-    <None Include="Patterns\PatternPrototype.cs" />
-    <Compile Include="Patterns\PatternSingleton.cs" />
+    <Compile Include="Patterns\PatternPrototype.cs" />
+    <None Include="Patterns\PatternSingleton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Patterns\PatternProxy.cs" />
   </ItemGroup>

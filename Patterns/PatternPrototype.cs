@@ -2,7 +2,7 @@
 
 public class PatternPrototype
 {
-    public interface IPrototype <T>
+    public interface IPrototype<T> where T : IPrototype<T>
     {
         T Clone();
     }
@@ -12,7 +12,7 @@ public class PatternPrototype
         void Operation();
     }
 
-    public class Product : IPrototype<IProduct>, IProduct
+    public class Product : IPrototype<Product>, IProduct
     {
         private string _name;
 
@@ -21,23 +21,25 @@ public class PatternPrototype
             _name = name;
         }
 
-        public IProduct Clone()
+        public Product Clone()
         {
             return new Product(_name);
         }
 
         public void Operation()
         {
-            Console.WriteLine("Operate " + _name);
+            Console.WriteLine("Operate " + _name + " (" + GetHashCode() + ")");
         }
     }
 
     public static void Main(string[] args)
     {
-        IPrototype<IProduct> prototype = new Product("ProductA");
+        Product prototype = new Product("ProductA");
 
-        IProduct product = prototype.Clone();
+        IProduct product = prototype;
+        product.Operation();
 
+        product = prototype.Clone();
         product.Operation();
     }
 }

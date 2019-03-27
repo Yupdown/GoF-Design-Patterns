@@ -2,12 +2,7 @@
 
 public class PatternFactoryMethod
 {
-    public interface ICreator
-    {
-        void Operation();
-    }
-
-    public abstract class Creator : ICreator
+    public abstract class Creator
     {
         private IProduct _product;
 
@@ -47,7 +42,7 @@ public class PatternFactoryMethod
 
     public static void Main(string[] args)
     {
-        ICreator creator = new CreatorA();
+        Creator creator = new CreatorA();
 
         creator.Operation();
     }
