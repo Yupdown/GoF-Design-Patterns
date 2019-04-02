@@ -18,7 +18,7 @@ public class PatternSingleton
 
         public void Operation()
         {
-            Console.WriteLine("Operating Singleton (Manual)");
+            Console.WriteLine("Operate Singleton (Manual)");
         }
     }
 
@@ -38,7 +38,7 @@ public class PatternSingleton
 
         public void Operation()
         {
-            Console.WriteLine("Operating Singleton (Automatic)");
+            Console.WriteLine("Operate Singleton (Automatic)");
         }
     }
 

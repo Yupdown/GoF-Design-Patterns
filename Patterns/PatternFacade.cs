@@ -4,25 +4,25 @@ public class PatternFacade
 {
     public class ClassA
     {
-        public void Operate()
+        public void Operation()
         {
-            Console.WriteLine("Operating ClassA");
+            Console.WriteLine("Operate ClassA");
         }
     }
 
     public class ClassB
     {
-        public void Operate()
+        public void Operation()
         {
-            Console.WriteLine("Operating ClassB");
+            Console.WriteLine("Operate ClassB");
         }
     }
 
     public class ClassC
     {
-        public void Operate()
+        public void Operation()
         {
-            Console.WriteLine("Operating ClassC");
+            Console.WriteLine("Operate ClassC");
         }
     }
 
@@ -39,19 +39,19 @@ public class PatternFacade
             _classC = classC;
         }
 
-        public void OperateClassA()
+        public void OperationClassA()
         {
-            _classA.Operate();
+            _classA.Operation();
         }
 
-        public void OperateClassB()
+        public void OperationClassB()
         {
-            _classB.Operate();
+            _classB.Operation();
         }
 
-        public void OperateClassC()
+        public void OperationClassC()
         {
-            _classC.Operate();
+            _classC.Operation();
         }
     }
 
@@ -63,8 +63,8 @@ public class PatternFacade
 
         Facade facade = new Facade(classA, classB, classC);
 
-        facade.OperateClassA();
-        facade.OperateClassB();
-        facade.OperateClassC();
+        facade.OperationClassA();
+        facade.OperationClassB();
+        facade.OperationClassC();
     }
 }

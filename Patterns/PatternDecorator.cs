@@ -4,14 +4,14 @@ public class PatternDecorator
 {
     public interface IComponent
     {
-        void Operate();
+        void Operation();
     }
 
     public class Component : IComponent
     {
-        public void Operate()
+        public void Operation()
         {
-            Console.WriteLine("Operating Component");
+            Console.WriteLine("Operate Component");
         }
     }
 
@@ -24,7 +24,7 @@ public class PatternDecorator
             _component = component;
         }
 
-        public abstract void Operate();
+        public abstract void Operation();
     }
 
     public class DecoratorA : Decorator
@@ -34,9 +34,9 @@ public class PatternDecorator
 
         }
 
-        public override void Operate()
+        public override void Operation()
         {
-            _component.Operate();
+            _component.Operation();
 
             Console.WriteLine("Powered by DecoratorA");
         }
@@ -49,9 +49,9 @@ public class PatternDecorator
 
         }
 
-        public override void Operate()
+        public override void Operation()
         {
-            _component.Operate();
+            _component.Operation();
 
             Console.WriteLine("Powered by DecoratorB");
         }
@@ -62,9 +62,9 @@ public class PatternDecorator
         IComponent decoratorA = new DecoratorA(new Component());
         IComponent decoratorB = new DecoratorB(decoratorA);
 
-        decoratorA.Operate();
+        decoratorA.Operation();
         Console.WriteLine();
 
-        decoratorB.Operate();
+        decoratorB.Operation();
     }
 }

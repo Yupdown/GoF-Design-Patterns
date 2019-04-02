@@ -21,9 +21,9 @@ public class PatternMemento
             _state = memento.state;
         }
 
-        public void Operate()
+        public void Operation()
         {
-            Console.WriteLine("Operating Originator as " + _state + " State");
+            Console.WriteLine("Operate Originator as " + _state + " State");
         }
     }
 
@@ -48,14 +48,14 @@ public class PatternMemento
         Originator originator = new Originator();
 
         originator.SetState("A");
-        originator.Operate();
+        originator.Operation();
 
         Memento memento = originator.CreateMemento();
 
         originator.SetState("B");
-        originator.Operate();
+        originator.Operation();
 
         originator.Restore(memento);
-        originator.Operate();
+        originator.Operation();
     }
 }

@@ -4,12 +4,12 @@ public class PatternProxy
 {
     public interface ISubject
     {
-        void Operate();
+        void Operation();
     }
 
     public class Subject : ISubject
     {
-        public void Operate()
+        public void Operation()
         {
             Console.WriteLine("Operate Subject");
         }
@@ -24,9 +24,9 @@ public class PatternProxy
             _subject = subject;
         }
 
-        public void Operate()
+        public void Operation()
         {
-            _subject.Operate();
+            _subject.Operation();
         }
     }
 
@@ -34,6 +34,6 @@ public class PatternProxy
     {
         ISubject proxy = new ProxySubject(new Subject());
 
-        proxy.Operate();
+        proxy.Operation();
     }
 }

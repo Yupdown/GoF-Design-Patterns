@@ -64,7 +64,7 @@ public class PatternBuilder
 
         public void Operation()
         {
-            Console.WriteLine("Operating " + _name);
+            Console.WriteLine("Operate " + _name);
         }
 
         public void SetName(string name)

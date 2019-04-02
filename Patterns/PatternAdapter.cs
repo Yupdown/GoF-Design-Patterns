@@ -4,12 +4,12 @@ public class PatternAdapter
 {
     public interface IAdapter
     {
-        void OperateAdapter();
+        void OperationAdapter();
     }
 
     public class Adaptee
     {
-        public void OperateAdaptee()
+        public void OperationAdaptee()
         {
             Console.WriteLine("Operate Adaptee");
         }
@@ -24,17 +24,17 @@ public class PatternAdapter
             _adaptee = adaptee;
         }
 
-        public void OperateAdapter()
+        public void OperationAdapter()
         {
-            _adaptee.OperateAdaptee();
+            _adaptee.OperationAdaptee();
         }
     }
 
     public class ImplementationAdapter : Adaptee, IAdapter
     {
-        public void OperateAdapter()
+        public void OperationAdapter()
         {
-            OperateAdaptee();
+            OperationAdaptee();
         }
     }
 
@@ -43,9 +43,9 @@ public class PatternAdapter
         IAdapter adapter;
 
         adapter = new ReferenceAdapter(new Adaptee());
-        adapter.OperateAdapter();
+        adapter.OperationAdapter();
 
         adapter = new ImplementationAdapter();
-        adapter.OperateAdapter();
+        adapter.OperationAdapter();
     }
 }

@@ -42,7 +42,7 @@ public class PatternComposite
 
         public void Operation()
         {
-            Console.WriteLine("Operating " + _name);
+            Console.WriteLine("Operate " + _name);
         }
     }
 

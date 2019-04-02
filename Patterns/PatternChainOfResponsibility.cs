@@ -15,7 +15,7 @@ public class PatternChainOfResponsibility
         {
             if (this is Receiver)
             {
-                Operate();
+                Operation();
             }
 
             if (_next != null)
@@ -24,30 +24,30 @@ public class PatternChainOfResponsibility
             }
         }
 
-        public abstract void Operate();
+        public abstract void Operation();
     }
 
     public class ReceiverA : Handler
     {
-        public override void Operate()
+        public override void Operation()
         {
-            Console.WriteLine("Operating ReceiverA");
+            Console.WriteLine("Operate ReceiverA");
         }
     }
 
     public class ReceiverB : Handler
     {
-        public override void Operate()
+        public override void Operation()
         {
-            Console.WriteLine("Operating ReceiverB");
+            Console.WriteLine("Operate ReceiverB");
         }
     }
 
     public class ReceiverC : Handler
     {
-        public override void Operate()
+        public override void Operation()
         {
-            Console.WriteLine("Operating ReceiverC");
+            Console.WriteLine("Operate ReceiverC");
         }
     }
 

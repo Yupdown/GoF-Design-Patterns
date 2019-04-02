@@ -53,7 +53,18 @@
     <None Include="Patterns\PatternBuilder.cs" />
     <None Include="Patterns\PatternFactoryMethod.cs" />
     <None Include="Patterns\PatternPrototype.cs" />
-    <Compile Include="Patterns\PatternSingleton.cs" />
+    <None Include="Patterns\PatternMemento.cs" />
+    <None Include="Patterns\PatternChainOfResponsibility.cs" />
+    <None Include="Patterns\PatternCommand.cs" />
+    <None Include="Patterns\PatternObserver.cs" />
+    <None Include="Patterns\PatternState.cs" />
+    <None Include="Patterns\PatternInterpreter.cs" />
+    <None Include="Patterns\PatternStrategy.cs" />
+    <None Include="Patterns\PatternIterator.cs" />
+    <None Include="Patterns\PatternTemplateMethod.cs" />
+    <None Include="Patterns\PatternMediator.cs" />
+    <Compile Include="Patterns\PatternVisitor.cs" />
+    <None Include="Patterns\PatternSingleton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Patterns\PatternProxy.cs" />
   </ItemGroup>

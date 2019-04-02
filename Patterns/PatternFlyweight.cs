@@ -12,7 +12,7 @@ public class PatternFlyweight
     {
         public void Operation()
         {
-            Console.WriteLine("Operating Flyweight (" + GetHashCode() + ")");
+            Console.WriteLine("Operate Flyweight (" + GetHashCode() + ")");
         }
     }
 
